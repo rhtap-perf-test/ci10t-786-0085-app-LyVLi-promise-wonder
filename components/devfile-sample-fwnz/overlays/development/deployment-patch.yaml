@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fwnz
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0085-tenant/ci10t-786-0085-app/devfile-sample-fwnz@sha256:de6bc60444ca77831b2fe93bd4e983e8d7611be3eea32fab1f6bd946b785de50
+        name: my-nodejs
+        resources: {}
+status: {}
